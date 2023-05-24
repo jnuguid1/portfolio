@@ -3,6 +3,18 @@ body, h1, h2, p, li, ul {
   margin: 0;
 }
 
-h1 {
-  font-size: 56px;
+h1, h2 {
+  font-family: Roboto, Courier, monospace;
+}
+
+p {
+  font-family: 'Playfair Display', 'Arial Narrow', Arial, sans-serif;
+}
+
+.profile-picture {
+  object-fit: contain;
+}
+
+@media (max-width: 499px) {
+
 }
