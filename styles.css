@@ -1,20 +1,100 @@
-body, h1, h2, p, li, ul {
+body, h1, h2, h3, p, li, ul {
   padding: 0;
   margin: 0;
 }
 
 h1, h2 {
-  font-family: Roboto, Courier, monospace;
-}
-
-p {
   font-family: 'Playfair Display', 'Arial Narrow', Arial, sans-serif;
 }
 
-.profile-picture {
+p {
+  font-family: Roboto, Courier, monospace;
+}
+
+#about-section,
+#work-section {
+  margin-bottom: 52px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+#about-section img {
   object-fit: contain;
 }
 
-@media (max-width: 499px) {
+#about-section picture {
+  display: flex;
+  justify-content: center;
+}
 
+#about-section .image-container {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 26px;
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, .7);
+  padding: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#about-section p {
+  margin-bottom: 8px;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.work-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  gap: 16px;
+  padding-bottom: 32px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.work-title-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+#work-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.work-card p {
+  padding: 16px;
+}
+
+#footer {
+  background-color: #99EDC3;
+  padding-bottom: 24px;
+  padding-top: 12px;
+}
+
+#footer, p {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.contact-info {
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }

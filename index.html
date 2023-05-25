@@ -17,8 +17,14 @@
       <i class="devicon-linkedin-plain"></i>
   -->
   <div id="about-section">
-    <img src="assets/profile-picture.jpg" alt="picture of me">
-    <h1>Jared R. Nuguid</h1>
+    <div class="image-container">
+      <picture>
+        <source media="(max-width: 400px)" srcset="assets/profile-220w.jpg">
+        <source media="(min-width: 399px)" srcset="assets/profile.jpg" />
+        <img src="assets/profile-220w.jpg" alt="picture of me">
+      </picture>
+      <h1>Jared R. Nuguid</h1>
+    </div>
     <h2>About me</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quos quae ratione nobis ut quisquam repellat quas sunt sit, in est quasi magnam nulla, inventore blanditiis quod. Exercitationem quo dicta ipsam doloremque.</p>
     <div class="icon-row">
@@ -35,7 +41,29 @@
           <h3>Project name</h3>
           <div class="icon-row">
             <i class="devicon-github-original"></i>
-            <img src="assets/open-in-new.svg" alt="open in new icon">
+            <img src="assets/open-in-new.svg" alt="open in new icon" height="15" width="15">
+          </div>
+        </div>
+        <p>Short description of the project. Just a couple sentences will do.</p>
+      </div>
+      <div class="work-card">
+        <img src="assets/project-placeholder.png" alt="project screenshot">
+        <div class="work-title-row">
+          <h3>Project name</h3>
+          <div class="icon-row">
+            <i class="devicon-github-original"></i>
+            <img src="assets/open-in-new.svg" alt="open in new icon" height="15" width="15">
+          </div>
+        </div>
+        <p>Short description of the project. Just a couple sentences will do.</p>
+      </div>
+      <div class="work-card">
+        <img src="assets/project-placeholder.png" alt="project screenshot">
+        <div class="work-title-row">
+          <h3>Project name</h3>
+          <div class="icon-row">
+            <i class="devicon-github-original"></i>
+            <img src="assets/open-in-new.svg" alt="open in new icon" height="15" width="15">
           </div>
         </div>
         <p>Short description of the project. Just a couple sentences will do.</p>
@@ -52,8 +80,7 @@
       <i class="devicon-github-original"></i>
       <i class="devicon-linkedin-plain"></i>
     </div>
-    <img src="assets/profile-picture.jpg" alt="profile picture">
+    <!-- <img src="assets/profile-picture.jpg" alt="profile picture"> -->
   </div>
-  <script src="https://kit.fontawesome.com/80f4c3976c.js" crossorigin="anonymous"></script>
 </body>
 </html>
