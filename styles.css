@@ -102,3 +102,33 @@ h2 {
 #footer i {
   font-size: 28px;
 }
+
+@media (min-width: 450px) {
+  body {
+    padding: 36px 24px;
+  }
+
+  h1 {
+    top: 24px;
+    left: auto;
+    right: 24px;
+    padding: 0;
+    bottom: auto;
+    font-size: 56px;
+    background-color: transparent;
+    color: black;
+  }
+
+  #about-section picture {
+    display: block;
+  }
+
+  #about-section .image-container {
+    
+  }
+
+  .section-content {
+    padding: 48px 24px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
