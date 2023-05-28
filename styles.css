@@ -11,11 +11,29 @@ p {
   font-family: Roboto, Courier, monospace;
 }
 
+#about-section p,
+#work-section p {
+  color: #464646;
+}
+
+a:hover, a:visited, a {
+  color: black;
+  text-decoration: none;
+}
+
+#about-section h2 {
+  margin-top: 16px;
+}
+
 #about-section,
 #work-section {
   margin-bottom: 52px;
-  padding-left: 28px;
-  padding-right: 28px;
+}
+
+#about-section,
+#work-section,
+#footer p {
+  padding: 0 20px;
 }
 
 #about-section img {
@@ -29,7 +47,6 @@ p {
 
 #about-section .image-container {
   position: relative;
-  margin-bottom: 16px;
 }
 
 h1 {
@@ -46,10 +63,12 @@ h1 {
 h2 {
   text-align: center;
   margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 30px;
 }
 
 #about-section p {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .icon-row {
@@ -60,11 +79,19 @@ h2 {
 
 .work-card {
   display: flex;
-  justify-content: center;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 16px;
   padding-bottom: 32px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.work-card h3 {
+  font-weight: 200;
+  font-size: 24px
+}
+
+.work-card img {
+  max-width: 100%;
 }
 
 .work-title-row {
@@ -78,8 +105,12 @@ h2 {
   gap: 32px;
 }
 
+.work-card i {
+  font-size: 20px;
+}
+
 .work-card p {
-  padding: 16px;
+  padding: 0 24px;
 }
 
 #footer {
@@ -88,27 +119,19 @@ h2 {
   padding-top: 12px;
 }
 
-#footer, p {
-  padding-left: 28px;
-  padding-right: 28px;
-}
-
 .contact-info {
   font-size: 14px;
   margin-top: 12px;
   margin-bottom: 12px;
 }
 
-#footer i {
-  font-size: 28px;
+#footer i,
+#about-section i {
+  font-size: 24px;
 }
 
 @media (min-width: 450px) {
-  body {
-    padding: 36px 24px;
-  }
-
-  h1 {
+  /* h1 {
     top: 24px;
     left: auto;
     right: 24px;
@@ -117,18 +140,91 @@ h2 {
     font-size: 56px;
     background-color: transparent;
     color: black;
+  } */
+
+  h2 {
+    text-align: left;
+    font-size: 36px;
   }
 
   #about-section picture {
     display: block;
   }
 
-  #about-section .image-container {
+  .section-content {
+    padding: 24px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .work-card {
+    max-width: 45%;
+  }
     
+}
+
+@media (min-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #about-section,
+  #work-section {
+    width: 1000px;
+  }
+
+  h1 {
+    font-size: 48px;
+    padding: 10px 26px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    bottom: 4px;
+    left: auto;
+  }
+
+  #about-section p {
+    line-height: 28px;
+    margin: 24px 0;
+  }
+
+  #about-section {
+    display: flex;
+    align-items: center;
   }
 
   .section-content {
-    padding: 48px 24px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: fit-content;
+  }
+
+  #about-section .icon-row {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+  }
+
+  .work-card {
+    max-width: 30%;
+  }
+
+  #footer {
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 48px;
+  }
+
+  #footer-content {
+    width: 1000px;
+  }
+
+  #footer p {
+    padding: 0;
+  }
+
+  #footer .icon-row {
+    justify-content: start;
   }
 }

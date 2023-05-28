@@ -12,25 +12,25 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> </head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
 <body>
-  <!--
-      <i class="devicon-github-original"></i>
-      <i class="devicon-linkedin-plain"></i>
-  -->
   <div id="about-section">
+    <div class="image-container">
+      <picture>
+        <source media="(max-width: 450px)" srcset="assets/profile-220w.jpg">
+        <source media="(min-width: 399px)" srcset="assets/profile.jpg" />
+        <img src="assets/profile-220w.jpg" alt="picture of me">
+      </picture>
+      <h1>Jared R. Nuguid</h1>
+    </div>
     <div class="section-content">
-      <div class="image-container">
-        <picture>
-          <source media="(max-width: 450px)" srcset="assets/profile-220w.jpg">
-          <source media="(min-width: 399px)" srcset="assets/profile.jpg" />
-          <img src="assets/profile-220w.jpg" alt="picture of me">
-        </picture>
-        <h1>Jared R. Nuguid</h1>
-      </div>
       <h2>About me</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quos quae ratione nobis ut quisquam repellat quas sunt sit, in est quasi magnam nulla, inventore blanditiis quod. Exercitationem quo dicta ipsam doloremque.</p>
+      <p>Hello! My name is Jared and I’m a recent computer science graduate from York University. I have internship experience in full stack development at a startup called Andie. I am passionate about frontend and backend web development, and I am currently learning Node.js and Express. My languages and frameworks of choice are Java, JavaScript and React. Outside of technology, I love language learning, rock climbing and martial arts.</p>
       <div class="icon-row">
-        <i class="devicon-github-original"></i>
-        <i class="devicon-linkedin-plain"></i>
+        <a href="https://github.com/jnuguid1">
+          <i class="devicon-github-original"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jared-nuguid/">
+          <i class="devicon-linkedin-plain"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -38,51 +38,114 @@
     <h2>My work</h2>
     <div id="work-grid">
       <div class="work-card">
-        <img src="assets/project-placeholder.png" alt="project screenshot">
+        <img src="assets/screenshots/shopping-cart.png" alt="project screenshot">
         <div class="work-title-row">
-          <h3>Project name</h3>
+          <h3>The Armory</h3>
           <div class="icon-row">
-            <i class="devicon-github-original"></i>
-            <img src="assets/open-in-new.svg" alt="open in new icon" height="15" width="15">
+            <a href="https://github.com/jnuguid1/shopping-cart ">
+              <i class="devicon-github-original"></i>
+            </a>
+            <a href="https://jnuguid1.github.io/shopping-cart/ ">
+              <img src="assets/open-in-new.svg" alt="open in new icon" height="20" width="20">
+            </a>
           </div>
         </div>
-        <p>Short description of the project. Just a couple sentences will do.</p>
+        <p>A React e-commerce web application for an imaginary boxing supplies store. Here I learned about React routing, React testing, and integration testing.</p>
       </div>
       <div class="work-card">
-        <img src="assets/project-placeholder.png" alt="project screenshot">
+        <img src="assets/screenshots/todo.png" alt="project screenshot">
         <div class="work-title-row">
-          <h3>Project name</h3>
+          <h3>Just Todo It</h3>
           <div class="icon-row">
-            <i class="devicon-github-original"></i>
-            <img src="assets/open-in-new.svg" alt="open in new icon" height="15" width="15">
+            <a href="https://github.com/jnuguid1/just-todo-it ">
+              <i class="devicon-github-original"></i>
+            </a>
+            <a href="https://jnuguid1.github.io/just-todo-it/ ">
+              <img src="assets/open-in-new.svg" alt="open in new icon" height="20" width="20">
+            </a>
           </div>
         </div>
-        <p>Short description of the project. Just a couple sentences will do.</p>
+        <p>A JavaScript to-do list web application featuring projects, to-do lists and checklists. I learned the model-view-controller design pattern and how to work with the DOM.</p>
       </div>
       <div class="work-card">
-        <img src="assets/project-placeholder.png" alt="project screenshot">
+        <img src="assets/screenshots/knighty-scroll.png" alt="project screenshot">
         <div class="work-title-row">
-          <h3>Project name</h3>
+          <h3>A Knightly Scroll</h3>
           <div class="icon-row">
-            <i class="devicon-github-original"></i>
-            <img src="assets/open-in-new.svg" alt="open in new icon" height="15" width="15">
+            <a href="https://github.com/jnuguid1/2D-Endless-Runner ">
+              <i class="devicon-github-original"></i>
+            </a>
+            <a href="https://jnuguid1.itch.io/a-knightly-scroll ">
+              <img src="assets/open-in-new.svg" alt="open in new icon" height="20" width="20">
+            </a>
           </div>
         </div>
-        <p>Short description of the project. Just a couple sentences will do.</p>
+        <p>A 2D endless runner game built in C# and Unity. I learned how to use Unity and C# for game development.</p>
+      </div>
+      <div class="work-card">
+        <img src="assets/screenshots/yu-student.png" alt="project screenshot">
+        <div class="work-title-row">
+          <h3>Student YU</h3>
+          <div class="icon-row">
+            <a href="https://www.figma.com/proto/Npy1aaziIFl838FLVuh0Lb/Interactive-Prototype?node-id=2-3&starting-point-node-id=2%3A3 ">
+              <i class="devicon-github-original"></i>
+            </a>
+            <a href="https://youtu.be/AI4yhIOksWw ">
+              <img src="assets/open-in-new.svg" alt="open in new icon" height="20" width="20">
+            </a>
+          </div>
+        </div>
+        <p>A prototype for a mobile app that connects York University students via their hobbies, and courses. I collaborated in a team of 4 to build an interactive prototype in Figma.</p>
+      </div>
+      <div class="work-card">
+        <img src="assets/screenshots/resume-builder.png" alt="project screenshot">
+        <div class="work-title-row">
+          <h3>CV Generator</h3>
+          <div class="icon-row">
+            <a href="https://github.com/jnuguid1/cv-project ">
+              <i class="devicon-github-original"></i>
+            </a>
+            <a href="https://jnuguid1.github.io/cv-project/ ">
+              <img src="assets/open-in-new.svg" alt="open in new icon" height="20" width="20">
+            </a>
+          </div>
+        </div>
+        <p>A CV generator built in React. I learned how to convert web pages to pdf and practiced using React.</p>
+      </div>
+      <div class="work-card">
+        <img src="assets/screenshots/battleships.png" alt="project screenshot">
+        <div class="work-title-row">
+          <h3>Battleships</h3>
+          <div class="icon-row">
+            <a href="https://github.com/jnuguid1/battleship  ">
+              <i class="devicon-github-original"></i>
+            </a>
+            <a href="https://jnuguid1.github.io/battleship/  ">
+              <img src="assets/open-in-new.svg" alt="open in new icon" height="20" width="20">
+            </a>
+          </div>
+        </div>
+        <p>An implementation of the classic game of Battleships built in JavaScript. In this project I learned Jest, unit testing, and test-driven development.</p>
       </div>
     </div>
   </div>
   <div id="footer">
-    <h2>Contact me</h2>
-    <p id="footer-description">Please get in touch if you think our work could be mutually beneficial!</p>
-    <p class="contact-info">48 Boticelli Way<br> Woodbridge, Ontario, L4H 0C7</p>
-    <p class="contact-info">647-836-4717</p>
-    <p class="contact-info">jarednuguid@gmail.com</p>
-    <div class="icon-row">
-      <i class="devicon-github-original"></i>
-      <i class="devicon-linkedin-plain"></i>
+    <div id="footer-content">
+      <h2>Contact me</h2>
+      <p id="footer-description">Please get in touch if you think our work could be mutually beneficial!</p>
+      <p class="contact-info">48 Boticelli Way<br> Woodbridge, Ontario, L4H 0C7</p>
+      <p class="contact-info">647-836-4717</p>
+      <p class="contact-info">jarednuguid@gmail.com</p>
+      <div class="icon-row">
+        <a href="https://github.com/jnuguid1">
+          <i class="devicon-github-original"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jared-nuguid/">
+          <i class="devicon-linkedin-plain"></i>
+        </a>
+      </div>
+      <!-- <img src="assets/profile-picture.jpg" alt="profile picture"> -->
     </div>
-    <!-- <img src="assets/profile-picture.jpg" alt="profile picture"> -->
   </div>
 </body>
 </html>
